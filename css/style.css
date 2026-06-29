@@ -21,7 +21,7 @@
     position: absolute;
     bottom: 0;
     width: 50px;
-    animation: pipe-animation 3s infinite linear;
+    animation: pipe-animation 3.5s infinite linear;
 }
 
 .princesa {
@@ -59,7 +59,7 @@
 }
 
 .jump {
-    animation: jump 1500ms ease-in-out;
+    animation: jump 900ms cubic-bezier(0.33, 0, 0.66, 1);
 }
 
 @keyframes pipe-animation {
@@ -69,9 +69,7 @@
 
 @keyframes jump {
     0%   { bottom: 0; }
-    25%  { bottom: 280px; }
-    /* fica bastante tempo lá em cima */
-    65%  { bottom: 280px; }
-    /* cai devagar no final */
+    40%  { bottom: 300px; }
+    50%  { bottom: 300px; }
     100% { bottom: 0; }
 }
