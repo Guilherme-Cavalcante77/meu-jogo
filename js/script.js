@@ -16,7 +16,7 @@ function pular() {
   setTimeout(() => {
     princesa.classList.remove('jump');
     pulando = false;
-  }, 1100); // mesmo tempo do CSS
+  }, 1500); // mesmo tempo do CSS
 }
 
 // --- CONTROLES: TECLADO (PC) ---
