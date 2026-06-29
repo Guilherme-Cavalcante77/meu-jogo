@@ -16,7 +16,7 @@ function pular() {
   setTimeout(() => {
     princesa.classList.remove('jump');
     pulando = false;
-  }, 800); // mais tempo no ar
+  }, 1100); // mesmo tempo do CSS
 }
 
 // --- CONTROLES: TECLADO (PC) ---
@@ -46,8 +46,8 @@ setInterval(() => {
   const pipeRect = pipe.getBoundingClientRect();
 
   const colidiu =
-    princesaRect.right > pipeRect.left + 20 &&
-    princesaRect.left < pipeRect.right - 20 &&
+    princesaRect.right > pipeRect.left + 15 &&
+    princesaRect.left < pipeRect.right - 15 &&
     princesaRect.bottom > pipeRect.top + 10;
 
   if (colidiu) {
