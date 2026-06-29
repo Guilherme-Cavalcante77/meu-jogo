@@ -20,7 +20,7 @@
 .pipe {
     position: absolute;
     bottom: 0;
-    width: 50px; /* era 80px, agora menor */
+    width: 50px;
     animation: pipe-animation 3s infinite linear;
 }
 
@@ -59,22 +59,19 @@
 }
 
 .jump {
-    animation: jump 1100ms ease-in-out; /* mais tempo no ar */
+    animation: jump 1500ms ease-in-out;
 }
 
 @keyframes pipe-animation {
-    from {
-        right: -50px;
-    }
-    to {
-        right: 100%;
-    }
+    from { right: -50px; }
+    to   { right: 100%; }
 }
 
 @keyframes jump {
     0%   { bottom: 0; }
-    35%  { bottom: 280px; }
-    50%  { bottom: 280px; }
+    25%  { bottom: 280px; }
+    /* fica bastante tempo lá em cima */
     65%  { bottom: 280px; }
+    /* cai devagar no final */
     100% { bottom: 0; }
 }
