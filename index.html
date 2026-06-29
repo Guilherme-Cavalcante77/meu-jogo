@@ -1,20 +1,40 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
+
 <head>
+
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Rapunzel Jump</title>
+
     <link rel="stylesheet" href="./css/style.css">
-    <script src="./js/script.js" defer></script>
-    <title>Super Mario</title>
+
+    <script defer src="./js/script.js"></script>
+
 </head>
+
 <body>
 
     <div class="game-board">
+
+        <div class="score">
+            Pontos:
+            <span id="score">0</span>
+        </div>
+
         <img src="./images/princesa.gif" class="princesa">
-        <img src="./images/gamerover.png" class="gameover">
+
         <img src="./images/piperox.png" class="pipe">
-        <button class="btn-reiniciar" onclick="location.reload()">Jogar de novo</button>
+
+        <img src="./images/gamerover.png" class="gameover">
+
+        <button class="btn-reiniciar">
+            Jogar novamente
+        </button>
+
     </div>
 
 </body>
+
 </html>
