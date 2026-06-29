@@ -16,7 +16,7 @@ function pular() {
   setTimeout(() => {
     princesa.classList.remove('jump');
     pulando = false;
-  }, 540);
+  }, 800); // mais tempo no ar
 }
 
 // --- CONTROLES: TECLADO (PC) ---
@@ -53,10 +53,8 @@ setInterval(() => {
   if (colidiu) {
     gameOver = true;
 
-    // Para o cano
     pipe.style.animationPlayState = 'paused';
 
-    // Posiciona game over onde estava a princesa
     const boardRect = document.querySelector('.game-board').getBoundingClientRect();
     const leftPos = princesaRect.left - boardRect.left;
     const bottomPos = boardRect.bottom - princesaRect.bottom;
@@ -69,7 +67,6 @@ setInterval(() => {
     gameOverImg.style.transform = 'none';
     gameOverImg.style.top = 'auto';
 
-    // Mostra botão de reiniciar
     btnReiniciar.style.display = 'block';
   }
 }, 10);
