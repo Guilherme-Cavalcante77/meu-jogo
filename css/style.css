@@ -70,8 +70,15 @@
 }
 
 @keyframes jump {
-    0%   { bottom: 0; }
-    45%  { bottom: 200px; }
-    55%  { bottom: 280px; }
-    100% { bottom: 0; }
+      0%   { bottom: 0px; }
+    10%  { bottom: 56px; }
+    20%  { bottom: 112px; }
+    30%  { bottom: 168px; }
+    40%  { bottom: 224px; }
+    50%  { bottom: 280px; }
+    60%  { bottom: 224px; }
+    70%  { bottom: 168px; }
+    80%  { bottom: 112px; }
+    90%  { bottom: 56px; }
+    100% { bottom: 0px; }
 }
