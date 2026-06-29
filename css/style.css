@@ -60,6 +60,7 @@
     background-color: #b57bee;
 }
 
+/* NOVA ANIMAÇÃO */
 .jump {
     animation: jump 900ms cubic-bezier(.22,.61,.36,1);
 }
@@ -68,12 +69,14 @@
     from {
         right: -45px;
     }
+
     to {
         right: 100%;
     }
 }
 
 @keyframes jump {
+
     0% {
         bottom: 0;
     }
