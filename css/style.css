@@ -20,14 +20,16 @@
 .pipe {
     position: absolute;
     bottom: 0;
-    width: 50px;
-    animation: pipe-animation 3s infinite linear;
+    width: 45px;
+    height: 200px; /* altura fixa menor */
+    animation: pipe-animation 6s infinite linear; /* bem mais lento */
 }
 
 .princesa {
-    width: 150px;
+    width: 100px; /* um pouco menor */
     position: absolute;
     bottom: 0;
+    left: 50px;
 }
 
 .gameover {
@@ -59,19 +61,17 @@
 }
 
 .jump {
-    animation: jump 1500ms ease-in-out;
+    animation: jump 700ms ease-in-out;
 }
 
 @keyframes pipe-animation {
-    from { right: -50px; }
+    from { right: -45px; }
     to   { right: 100%; }
 }
 
 @keyframes jump {
     0%   { bottom: 0; }
-    25%  { bottom: 280px; }
-    /* fica bastante tempo lá em cima */
-    65%  { bottom: 280px; }
-    /* cai devagar no final */
+    45%  { bottom: 220px; }
+    55%  { bottom: 220px; }
     100% { bottom: 0; }
 }
