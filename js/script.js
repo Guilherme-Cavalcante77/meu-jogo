@@ -17,7 +17,7 @@ function pular() {
   setTimeout(() => {
     princesa.classList.remove('jump');
     pulando = false;
-  }, 1500);
+  }, 700); // igual ao tempo do CSS (.jump)
 }
 
 // --- CONTROLES: TECLADO (PC) ---
@@ -47,10 +47,14 @@ setInterval(() => {
   const princesaRect = princesa.getBoundingClientRect();
   const pipeRect = pipe.getBoundingClientRect();
 
+  // Colisão real: só conta se as caixas realmente se sobrepõem,
+  // com uma margem pequena de tolerância (10px) para não punir
+  // por 1px de erro visual.
+  const margem = 10;
   const colidiu =
-    princesaRect.right > pipeRect.left + 15 &&
-    princesaRect.left < pipeRect.right - 15 &&
-    princesaRect.bottom > pipeRect.top + 10;
+    princesaRect.right - margem > pipeRect.left &&
+    princesaRect.left + margem < pipeRect.right &&
+    princesaRect.bottom - margem > pipeRect.top;
 
   if (colidiu) {
     gameOver = true;
