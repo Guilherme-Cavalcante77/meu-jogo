@@ -21,8 +21,8 @@
     position: absolute;
     bottom: 0;
     width: 45px;
-    height: 200px; /* altura fixa menor */
-    animation: pipe-animation 6s infinite linear; /* bem mais lento */
+    height: 110px;
+    animation: pipe-animation 6s infinite linear;
 }
 
 .princesa {
