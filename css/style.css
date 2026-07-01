@@ -20,8 +20,8 @@
 .pipe {
     position: absolute;
     bottom: 0;
-    width: 40px;
-    height: 60px;
+    width: 35px;
+    height: 80px;
     object-fit: cover;
     object-position: top;
     animation: pipe-animation 1.0s infinite linear;
