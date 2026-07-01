@@ -50,7 +50,7 @@ setInterval(() => {
   // Colisão real: só conta se as caixas realmente se sobrepõem,
   // com uma margem pequena de tolerância (10px) para não punir
   // por 1px de erro visual.
-  const margem = 10;
+  const margem = 30;
   const colidiu =
     princesaRect.right - margem > pipeRect.left &&
     princesaRect.left + margem < pipeRect.right &&
