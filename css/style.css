@@ -24,7 +24,7 @@
     height: 60px;
     object-fit: cover;
     object-position: top;
-    animation: pipe-animation 0.9s infinite linear;
+    animation: pipe-animation 0.8s infinite linear;
 }
 
 .princesa {
